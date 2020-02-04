@@ -5,10 +5,9 @@
 git clone https://github.com/NOAA-EMC/global-workflow coupled-workflow
 cd coupled-workflow
 git checkout feature/coupled-crow
-git submodule update --init --recursive                       #Update submodules if necessary
+git submodule update --init --recursive                   #Update submodules if necessary
 cd sorc
-sh checkout.sh coupled                                        # Check out the coupled code, EMC_post, gsi, ...
-
+sh checkout.sh coupled                                    # Check out the coupled code, EMC_post, gsi, ...
 ```
 ## Compile code used in ufs-s2s-model and EMC_post and link fixed files and executable programs:
 ```
@@ -27,7 +26,6 @@ le need to be worked with.
 
 The user file is a short text file in YAML format, telling CROW the information of the user. Such as scratch space for EXPDIR; acco
 unt information and email for cron job notification purpose. A template named user.yaml.default is included in the repository.
-
 ```
 cd ../workflow
 cp user.yaml.default user.yaml
@@ -37,7 +35,6 @@ Then, open and edit user.yaml:
 - cpu_project: cpu project that you are working with.
 - hpss_project: hpss project that you are working with.
 ```
-
 
 ## Create experiment directory using CROW
 CROW gets information of the targeted experiment from case files. A case file is a text file in YAML format, describing the informa
