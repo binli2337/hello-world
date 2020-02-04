@@ -2,6 +2,7 @@ How to use the unified workflow for the ufs-s2s-model application
 (work in progress)
 
 1. Checkout the source code and scripts
+
 git clone https://github.com/NOAA-EMC/global-workflow coupled-workflow
 cd coupled-workflow
 git checkout feature/coupled-crow
@@ -10,6 +11,7 @@ cd sorc
 sh checkout.sh coupled                                        # Check out the coupled code, EMC_post, gsi, ...
 
 2. Compile code used in ufs-s2s-model and EMC_post and link fixed files and executable programs:
+
 sh build_ncep_post.sh        #This command will build ncep_post.
 sh build_fv3_coupled.sh      #This command will build ufs-s2s-model
 
@@ -17,6 +19,7 @@ To link fixed files and executable programs for the coupled application:
 sh link_fv3gfs.sh emc hera coupled
 
 3. Create CROW user file
+
 CROW is a python-based configuration toolbox, residing under /workflow folder as a git submodule. The /workflow directory 
 also contains a series of YAML-formatted text files, describing the workflow line-up, default settings and platform
 descriptions. They collectively serve as the interface between the coupled-workflow and the CROW toolbox. For general users,
@@ -35,9 +38,12 @@ Then, open and edit user.yaml:
 - hpss_project: hpss project that you are working with.
 
 4. Create experiment directory using CROW
+
 CROW gets information of the targeted experiment from case files. A case file is a text file in YAML format, describing the
 information of the experiment to be configured. A series of pre-generated case files are given under /workflow/cases. 
-You could generate your own case from scratch as well. For this project, we start with "coupled_free_forecast.yaml". The "coupled_free_forecast.yaml" will generate a 3-day run case starting from 2016040100. From the /workflow/CROW directory:
+You could generate your own case from scratch as well. For this project, we start with "coupled_free_forecast.yaml". 
+The "coupled_free_forecast.yaml" will generate a 3-day run case starting from 2016040100. From the /workflow/CROW directory:
+
 mkdir -p $PROJECT_DIR
 (Note that $PROJECT_DIR is the experiment directory that has been set in the user.yaml file.)
 ./setup_case.sh -p HERA coupled_free_forecast test_3d
@@ -46,11 +52,14 @@ OR
 This will create a experiment directory, containing all config files under the $PROJECT_DIR defined in user file.
 
 5. Create Rocoto XML using CROW
+
 The final process of workflow configuration is to generate a XML file for Rocoto. After the previous step, CROW 
 will pop-up the command for this step:
+
 ./make_rocoto_xml_for.sh $EXPERIMENT_DIRECTORY
 
 6. Run the model using the workflow
+
 cd $EXPERIMENT_DIRECTORY
 module load rocoto
 rocotorun -w workflow.xml -d workflow.db
