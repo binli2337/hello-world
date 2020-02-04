@@ -17,9 +17,14 @@ To link fixed files and executable programs for the coupled application:
 sh link_fv3gfs.sh emc hera coupled
 
 3. Create CROW user file
-CROW is a python-based configuration toolbox, residing under /workflow folder as a git submodule. The /workflow directory also contains a series of YAML-formatted text files, describing the workflow line-up, default settings and platform descriptions. They collectively serve as the interface between the coupled-workflow and the CROW toolbox. For general users, only the user file and case file need to be worked with.
+CROW is a python-based configuration toolbox, residing under /workflow folder as a git submodule. The /workflow directory 
+also contains a series of YAML-formatted text files, describing the workflow line-up, default settings and platform
+descriptions. They collectively serve as the interface between the coupled-workflow and the CROW toolbox. For general users,
+only the user file and case file need to be worked with.
 
-The user file is a short text file in YAML format, telling CROW the information of the user. Such as scratch space for EXPDIR; account information and email for cron job notification purpose. A template named user.yaml.default is included in the repository.
+The user file is a short text file in YAML format, telling CROW the information of the user. Such as scratch space for EXPDIR;
+account information and email for cron job notification purpose. A template named user.yaml.default is included in the
+repository.
 
 cd ../workflow
 cp user.yaml.default user.yaml
