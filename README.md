@@ -19,13 +19,13 @@ sh link_fv3gfs.sh emc hera coupled
 ```
 
 ## Create CROW user file
-CROW is a python-based configuration toolbox, residing under /workflow folder as a git submodule. The /workflow directory also cont
-ains a series of YAML-formatted text files, describing the workflow line-up, default settings and platform descriptions. They colle
-ctively serve as the interface between the coupled-workflow and the CROW toolbox. For general users, only the user file and case fi
-le need to be worked with.
+CROW is a python-based configuration toolbox, residing under /workflow folder as a git submodule. The /workflow directory also contains
+a series of YAML-formatted text files, describing the workflow line-up, default settings and platform descriptions. They collectively
+serve as the interface between the coupled-workflow and the CROW toolbox. For general users, only the user file and case file need to 
+be worked with.
 
-The user file is a short text file in YAML format, telling CROW the information of the user. Such as scratch space for EXPDIR; acco
-unt information and email for cron job notification purpose. A template named user.yaml.default is included in the repository.
+The user file is a short text file in YAML format, telling CROW the information of the user. Such as scratch space for EXPDIR, 
+account information and email for cron job notification purpose. A template named user.yaml.default is included in the repository.
 ```
 cd ../workflow
 cp user.yaml.default user.yaml
@@ -37,10 +37,10 @@ Then, open and edit user.yaml:
 ```
 
 ## Create experiment directory using CROW
-CROW gets information of the targeted experiment from case files. A case file is a text file in YAML format, describing the informa
-tion of the experiment to be configured. A series of pre-generated case files are given under /workflow/cases. You could generate y
-our own case from scratch as well. For this project, we start with "coupled_free_forecast.yaml". The "coupled_free_forecast.yaml" w
-ill generate a 3-day run case starting from 2016040100. From the /workflow/CROW directory:
+CROW gets information of the targeted experiment from case files. A case file is a text file in YAML format, describing the information
+of the experiment to be configured. A series of pre-generated case files are given under /workflow/cases. You could generate your
+own case from scratch as well. For this project, we start with "coupled_free_forecast.yaml". The "coupled_free_forecast.yaml" will
+generate a 3-day run case starting from 2016040100. From the /workflow/CROW directory:
 ```
 mkdir -p $PROJECT_DIR
 (Note that $PROJECT_DIR is the experiment directory that has been set in the user.yaml file.)
@@ -51,8 +51,8 @@ OR
 This will create a experiment directory, containing all config files under the $PROJECT_DIR defined in user file.
 
 ## Create Rocoto XML using CROW
-The final process of workflow configuration is to generate a XML file for Rocoto. After the previous step, CROW will pop-up the com
-mand for this step:
+The final process of workflow configuration is to generate a XML file for Rocoto. After the previous step, CROW will pop-up the
+command for this step:
 ```
 ./make_rocoto_xml_for.sh $EXPERIMENT_DIRECTORY
 ```
