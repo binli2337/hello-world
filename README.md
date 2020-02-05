@@ -45,10 +45,12 @@ generate a 3-day run case starting from 2016040100. From the /workflow/CROW dire
 mkdir -p $PROJECT_DIR
 (Note that $PROJECT_DIR is the experiment directory that has been set in the user.yaml file.)
 ./setup_case.sh -p HERA coupled_free_forecast test_3d
-OR
+
+or
+
 ./setup_case.sh -p HERA ../cases/coupled_free_forecast.yaml test_3d
 ```
-This will create a experiment directory, containing all config files under the $PROJECT_DIR defined in user file.
+This will create a experiment directory ($EXPERIMENT_DIRECTORY), containing all config files under the $PROJECT_DIR defined in user file.
 
 ## Create Rocoto XML using CROW
 The final process of workflow configuration is to generate a XML file for Rocoto. After the previous step, CROW will pop-up the
