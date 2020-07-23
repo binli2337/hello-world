@@ -34,8 +34,3 @@ If applicable, drag and drop screenshots to help explain your problem.
 
 **output logs**
 If applicable, include relevant output logs.
-Either drag and drop the entire log file here (if a long log) or
-
-```
-paste the code here (if a short section of log)
-```
