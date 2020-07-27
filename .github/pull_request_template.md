@@ -16,8 +16,8 @@ Link the issues to be closed with this PR, whether in this repository, or in ano
 ## Testing
 
 Are changes expect to change answers?
--[ ] Yes
--[ ] No
+ - [ ] Yes
+ - [ ] No
 
 
 
@@ -27,11 +27,11 @@ If testing this branch requires non-default branches in other repositories, list
 
 Do PRs in upstream repositories need to be merged first?
 If so, add the PR numbers.
--[ ] NEMS (list pr_number)
--[ ] CMEPS (list pr_number)
--[ ] fv3atm (list pr_number)
--[ ] MOM6 (list pr_number)
--[ ] CICE (list pr_number)
--[ ] WW3 (list pr_number)
--[ ] FMS (list pr_number)
--[ ] stochastic_physics (list pr_number)
+ - [ ] NEMS (list pr_number)
+ - [ ] CMEPS (list pr_number)
+ - [ ] fv3atm (list pr_number)
+ - [ ] MOM6 (list pr_number)
+ - [ ] CICE (list pr_number)
+ - [ ] WW3 (list pr_number)
+ - [ ] FMS (list pr_number)
+ - [ ] stochastic_physics (list pr_number)
