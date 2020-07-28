@@ -19,7 +19,8 @@ Give explicit steps to reproduce the behavior.
 
 ### Aditional context
 Add any other context about the problem here.
-Directly reference any issues or PRs in this or other repositories that this is related to, and describe how they are related. 
+Related issues:
+Related PRs:
 
 
 ### Output
