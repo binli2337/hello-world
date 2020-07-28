@@ -19,8 +19,8 @@ Give explicit steps to reproduce the behavior.
 
 ### Aditional context
 Add any other context about the problem here.
-Related issues:
-Related PRs:
+- Related issues:
+- Related PRs:
 
 
 ### Output
