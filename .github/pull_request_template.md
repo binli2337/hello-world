@@ -3,23 +3,19 @@
 Provide a detailed description of what this PR does.
 
 
-## Changes in this PR
+### Changes in this PR:
 -
--
-- fixes #<issue_number>
+
+Fixes #<issue_number>
 
 
-## Testing
+### Testing:
 
 Are changes expect to change answers?
-- Yes
-or
-- No
+-  
 
 
-## Associated PRs
+## Associated PRs:
+- #<PR_number>
 
-If testing this branch requires non-default branches in other repositories, list them.
--
--
 
