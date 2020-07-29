@@ -11,11 +11,11 @@ assignees: ''
 Provide a clear and concise description of what the problem is.
 
 
-### Solution
+## Solution
 Add a clear and concise description of what you want to happen.
 
 
-### Related issues and PRs
+## Related issues and PRs
 - related issues in this repository:
 - related issues in other repositories:
 - related PRs in this repository:

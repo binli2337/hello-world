@@ -5,7 +5,7 @@ What bug does it fix, or what feature does it add?
 
 
 
-### Issue(s) addressed
+## Issue(s) addressed
 
 Link the issues to be closed with this PR, whether in this repository, or in another repository.
 (Remember, issues should always be created before starting work on a PR branch!)

@@ -11,8 +11,8 @@ sh checkout.sh coupled                                    # Check out the couple
 ```
 ## Compile code used in ufs-s2s-model and EMC_post and link fixed files and executable programs:
 ```
-sh build_ncep_post.sh        #This command will build ncep_post.
-sh build_fv3_coupled.sh      #This command will build ufs-s2s-model
+sh build_ncep_post.sh        
+sh build_fv3_coupled.sh 
 
 To link fixed files and executable programs for the coupled application:
 sh link_fv3gfs.sh emc hera coupled
