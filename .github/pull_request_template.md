@@ -1,17 +1,30 @@
-## Description
-Provide a detailed description of what this PR does.
+### Description of changes
 
+### Specific notes
 
-## Changes in this PR:
+Issues Fixed (include github issue #):
 
+Are changes expected to change answers?
+- bit for bit (yes/no)
+- more substantial (yes/no)
 
-Fixes #<issue_number>
+Specific changes:
+- changes in parm directory (yes/no)
+- changes in module files (yes/no)
+- new tests added or removed (yes/no)
 
+Testing performed:
+- machines:
+- details:
 
-## Testing:
-Are changes expect to change answers?
+Hashes used for testing:
+- NEMS:
+- CMEPS:
+- fv3atm:
+- MOM6:
+- CICE:
+- WW3
+- stochastic_physics:
+- FMS:
 
-
-## Associated PRs:
-#<PR_number>
-
+Co-authored by:
