@@ -11,7 +11,7 @@ sh checkout.sh coupled                                    # Check out the couple
 ```
 ## Compile code used in ufs-s2s-model and EMC_post and link fixed files and executable programs:
 ```
-sh build_ncep_post.sh        
+sh build_ncep_post.sh     # post-processing        
 sh build_fv3_coupled.sh 
 
 To link fixed files and executable programs for the coupled application:
