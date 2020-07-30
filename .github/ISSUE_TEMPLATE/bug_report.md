@@ -12,7 +12,7 @@ Provide a clear and concise description of what the bug is.
 Also give a description of what behavior you expected to happen.
 
 
-## To Reproduce the behavior:
+## To Reproduce the behavior
 What compilers/machines are you seeing this with?
 Give explicit steps to reproduce the behavior.
 
